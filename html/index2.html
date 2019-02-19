@@ -103,7 +103,6 @@
         </tr>
     </table>
 
-    <div style="background-color: red; width: 200px; height: 500px;">
 
     </div>
     <br/><br/>  <br/><br/>  <br/><br/>  <br/><br/>  <br/><br/><br/><br/>  <br/><br/>  <br/><br/>  <br/><br/>  <br/><br/>
@@ -111,7 +110,7 @@
 
     <form>
 
-        
+
         <label for="text_id">Ho va Ten</label>
         <input type="text" id="text_id" value="Duong ngoc nam">
 
@@ -190,12 +189,21 @@
         <!--<input type="reset" value="Reinitialiser">-->
         <button type="reset">Reinitialiser</button>
 
-
+        <button type="button" id="test">cliquer</button>
     </form>
 
+    <div id="div_test" style="background-color: red; width: 200px; height: 500px;">
+
     <br/><br/>  <br/><br/>  <br/><br/>  <br/><br/>  <br/><br/><br/><br/>  <br/><br/>  <br/><br/>  <br/><br/>  <br/><br/>
-
-
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script>
+//            .log(window === this);
+        $(document).ready(function(){
+            $('#test').on('click',function () {
+                $("#div_test").css('background-color',"yellow")
+            })
+        })
+    </script>
 
 
     </body>
