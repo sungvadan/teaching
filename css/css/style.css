@@ -10,6 +10,13 @@ body {
     
 }
 .header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 20px;
+
+
     /* width: 500px;  */
     /* height: 50vh;
     width: 50vw; */
@@ -23,12 +30,53 @@ body {
     color: white;
     font-size: 14px;
     text-transform: uppercase;
+
+    /* position: relative; */
+    
 }
 
+.header-title {
+    margin-top: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: blue
+}
+
+
 .header-nav{
-    width: 50%; /* par rapport contenneur */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+
+    /* position: absolute; */
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+
+    /* position: relative;
+    top: 200px; */
+
+    /* position: absolute;
+    left: 10px;
+    right: 10px; */
+
+    /* position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px; */
+
+    /* position: absolute;
+    top: Opx;
+    right: 0px; */
+
+    /* width: 100%;
+    height: 100%; */
+    /* width: 50%; par rapport contenneur */
     background: orange;
-    margin: 20px 0;
+    /* margin: 20px 0; */
     text-align: center;
 }
 
@@ -54,15 +102,13 @@ span{
     text-decoration: line-through;
 }
 
-.header-title {
-    margin-top: 0px;
-}
 
 .main{
     background: lightgray;
     padding: 20px;
     line-height: 1.4;
     font-size: 16px;
+    /* position: relative; */
 }
 
 .main p{
@@ -94,4 +140,33 @@ span{
     text-decoration: none;
     font-size: 1rem;
     padding: 0.5em;
+    /* position: fixed;
+    top: 0px;
+    left: 0px; */
+
 }
+
+
+
+/* .main{
+    position: relative;
+}
+.div1{
+    background: green;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 80%;
+    height: 200px;
+    z-index: 5;
+}
+
+.div2{
+    background: blue;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 80%;
+    height: 50px;
+    z-index: 4;
+} */
